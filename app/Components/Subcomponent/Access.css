@@ -1,0 +1,181 @@
+.access-container {
+  padding: 1rem;
+  background-color: #ffffff;
+  width: 371px;
+  height: 530px;
+  border-radius: 20px;
+}
+
+
+.search-box {
+  background-color: #4749B30D;
+  width: 323px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 4px;
+  opacity: 1;
+}
+
+.searchicon {
+  width: 16px;
+  height: 16px;
+  margin-left: 8px;
+}
+
+.searchheadline {
+  margin-top: 2px;
+  color: #0000004D;
+}
+
+.filter {
+  margin-top: 18px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.right-box {
+  display: flex;
+  gap: 4px;
+}
+
+.filterheadline {
+  font-size: 10px;
+  font-weight: 400;
+  color: #000000CC;
+}
+
+.filter-box {
+  width: 86px;
+  height: 24px;
+  background-color: #F6F6FB;
+  border-radius: 4px;
+}
+
+.filtertext {
+  font-size: 10px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.arrow {
+  width: 9.49px;
+  height: 4.82px;
+}
+
+.access-title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.access-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 18px;
+}
+
+.access-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: #fff;
+  border-bottom: 1px solid #0000001A;
+  transition: all 0.3s ease;
+}
+
+.access-item:not(.three):hover .class-Class {
+  color: #A3A4D9;
+}
+
+.access-item:not(.three):hover .class-description {
+  color: #4749B3;
+}
+
+.access-item:not(.three):hover {
+  border-color: #4749B3;
+}
+
+.access-item:hover .access-img {
+  content: url('/playnow.png');
+}
+
+
+
+
+.access-item.three:hover .access-img {
+  filter: brightness(0.8);
+}
+
+.access-middle {
+  display: flex;
+  flex-direction: column;
+}
+
+.access-img {
+  width: 100px;
+  height: 64px;
+  margin-right: 1rem;
+  border-radius: 4px;
+}
+
+.class-Class {
+  font-size: 12px;
+  color: #9899DF;
+  font-weight: 600;
+}
+
+.class-description {
+  font-size: 16px;
+  font-weight: 700;
+  text-align: left;
+  color: black;
+}
+
+.class-day {
+  font-size: 10px;
+  margin-top: 10px;
+}
+
+.access-middle.three .class-Class {
+  color: #E66DFF;
+}
+.access-middle.three .class-description:hover{
+  color: #E66DFF;
+}
+
+.meeting-overlay {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.5); 
+display: flex;
+align-items: center;
+justify-content: center;
+z-index: 100;
+}
+
+.close-button {
+position: absolute;
+margin-left: 60%;
+z-index: 1100; 
+top: 6.4%;
+cursor: pointer;
+}
+
+/* @media (min-width: 320px) {
+  .access{
+    align-items: center;
+    margin-right: 10px;
+  }
+} */

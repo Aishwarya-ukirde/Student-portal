@@ -1,0 +1,136 @@
+.quicklink-main {
+  margin-top: 20px;
+}
+
+.quicklink-container {
+  margin: 0 10px;
+}
+
+.quicklink-headline {
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 20px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.quickline-box {
+  display: flex;
+  justify-content: center;
+}
+
+.quicklink-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.quicklink-item {
+  border-radius: 10px;
+  padding: 20px;
+  width: 346px;
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.quicklink-img {
+  max-width: 50%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.quicklink-h1 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.quicklink-p {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+
+.quicklink-item.one {
+  background-color: #4749B3;
+  color: white;
+}
+.quicklink-item.one:hover {
+  background-color: white;
+  color: #4749B3;
+}
+.quicklink-item.one:hover::before {
+  content: url('/colourlogo3.png');
+  position: absolute;
+  margin-bottom: 10px;
+}
+
+.quicklink-item.two {
+  background-color: #E66DFF;
+  color: white;
+}
+.quicklink-item.two:hover {
+  background-color: white;
+  color: #E66DFF;
+}
+.quicklink-item.two:hover::before {
+  content: url('/colourlogo2.png');
+  position: absolute;
+  margin-bottom: 10px;
+}
+
+.quicklink-item.three {
+  background-color: #4749B3;
+  color: white;
+}
+.quicklink-item.three:hover {
+  background-color: white;
+  color: #4749B3;
+}
+.quicklink-item.three:hover::before {
+  content: url('/colourlogo.png');
+  position: absolute;
+  margin-bottom: 10px;
+}
+
+
+@media (max-width: 768px) {
+  .quicklink-headline {
+    font-size: 1.25rem;
+    padding: 15px;
+  }
+
+  .quicklink-item {
+    width: 90%; 
+    height: auto;
+  }
+
+  .quicklink-img {
+    max-width: 60%; 
+  }
+
+  .quickline-box {
+    flex-direction: column; 
+    align-items: center;
+  }
+
+  .quicklink-h1 {
+    font-size: 1rem;
+  }
+
+  .quicklink-p {
+    font-size: 0.75rem;
+    color: white;
+  }
+}

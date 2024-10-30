@@ -1,0 +1,160 @@
+.announcements-container {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.announcements-heading {
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 1.25rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.announcement-item {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f3f4f6;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+.announcement-item:last-child {
+  margin-bottom: 0;
+}
+
+.announcement-img {
+  width: 32px;
+  height: 32px;
+  margin-right: 0.75rem;
+  object-fit: contain;
+}
+
+.announcement-text {
+  font-size: 1rem;
+  color: #333;
+}
+
+.schedule {
+  margin-top: 20px;
+}
+
+.schedule-container {
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.schedule-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 1.25rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.schedule-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.schedule-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.schedule-item.gray-bg {
+  background-color: #f3f4f6;
+}
+
+.schedule-item.pink-bg {
+  background-color: #E66DFF;
+  color: white;
+}
+
+.schedule-item.pink-bg .class-day {
+  color: white;
+}
+
+.schedule-item.lightpink-bg {
+  background-color: #FDF5FF;
+}
+
+.schedule-item:last-child {
+  margin-bottom: 0;
+}
+
+.schedule-img {
+  width: 28px;
+  height: 25px;
+  margin-right: 1rem;
+}
+
+.class-Class {
+  font-size: 0.875rem;
+  color: #9899DF;
+}
+
+.class-description {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #4749B3;
+}
+
+.class-day {
+  color: #7577D9;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.schedule-middle.two {
+  color: white;
+}
+
+.schedule-middle.two .class-Class,
+.schedule-middle.two .class-description {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .announcement-item {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .announcement-img {
+    margin-bottom: 10px;
+  }
+
+  .schedule-item {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .schedule-img {
+    margin-bottom: 10px;
+  }
+
+  .class-description {
+    font-size: 0.875rem;
+  }
+
+  .class-day {
+    font-size: 0.75rem;
+  }
+}
